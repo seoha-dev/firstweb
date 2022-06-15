@@ -2,7 +2,9 @@
 # <img src = "https://user-images.githubusercontent.com/97898227/173862507-7b1e2356-9eb3-4017-814b-bf3fb4b02ddb.gif" width="600" height="320"> 
 
 ## 2022.02 static web - seoha's firstweb
-난생 처음 만든 웹 페이지, 주제는 자기소개
+난생 처음 만든 웹 페이지, 컨셉은 개인 웹
+
+<a href="https://seoha-dev.github.io/firstweb/">직접 보러가기</a>
 
 ## About
 __index__
