@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis:wght@200&family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis:wght@200&family=Lexend+Zetta:wght@200&family=Raleway:ital,wght@1,300&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+#contents {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+section {
+	position: absolute;
+	height: 100%;
+	right: 0;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #111;
+	color: #fff;
+	z-index: 2;
+	transition: 0.3s;
+}
+
+section header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 40px;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+section video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	mix-blend-mode: overlay;
+}
+
+.title a {
+	font-size: 40px;
+	color: #FFF;
+	text-shadow: 10px 10px #000;
+	font-family: 'Raleway', sans-serif;
+	cursor: pointer;
+	z-index: 10;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.clock {
+	top: 10;
+	padding: 3px;
+	background-color: black;
+	position: absolute;
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+}
+
+.list {
+	background-position: center;
+	position: relative;
+	right: 0;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	font-family: 'Comfortaa', cursive;
+	z-index: 10;
+}
+
+.list ul {
+	list-style: none;
+	justify-content: right;
+	display: flex;
+}
+
+.list ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: whitesmoke;
+	padding: 20px;
+	margin: 1px;
+	text-shadow: 10px 10px #000;
+	font-weight: bold;
+}
+
+.list ul li a:hover {
+	color: white;
+	text-decoration: underline;
+	text-decoration-color: lightcoral;
+}
+
+.container {
+	position: relative;
+	display: block;
+	height: 90%;
+	width: 90%;
+	max-height: 600px;
+	max-width: 900px;
+	margin: auto;
+	padding: 20px;
+	box-shadow: 0px 0px 20px #00000010;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	margin-bottom: 3%;
+	margin-top: 130px;
+}
+
+.container h1 {
+	text-align: center;
+}
+
+.form-box {
+	display: block;
+	width: 100%;
+	column-count: 2;
+}
+
+.form-group {
+	padding: 10;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 20px;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-group input, .form-group textarea {
+	width: 100%;
+	padding: 5px;
+	font-size: 18px;
+	border: 1px solid rgba(128, 128, 128, 0.199);
+	margin-top: 5px;
+}
+
+textarea {
+	position: relative;
+	display: block;
+	margin: auto;
+	resize: none;
+}
+
+button[type="submit"] {
+	width: 30%;
+	height: 10%;
+	display: block;
+	margin: auto;
+	border: none;
+	outline: none;
+	font-size: 24px;
+	border-radius: 8px;
+	color: rgb(0, 191, 92);
+	text-align: center;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+@media ( max-width : 530px) {
+	.container {
+		margin-top: 0;
+		height: 110%;
+	}
+	.form-box {
+		column-count: 1;
+	}
+	.form-group {
+		margin-top: 0;
+		margin: auto;
+	}
+	textarea {
+		height: 100;
+	}
+	section {
+		width: 100%;
+		height: 100%;
+	}
+	.title a, .clock, .list ul li a {
+		font-size: 70%;
+	}
+}
